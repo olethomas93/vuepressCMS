@@ -6,7 +6,7 @@ media_folder: "src/.vuepress/public/images"
 public_folder: "src/.vuepress/dist/"
 collections:
   - name: "doc" # Used in routes, e.g., /admin/collections/blog
-    label: "Doc" # Used in the UI
+    label: "Kunder" # Used in the UI
     folder: "src/kunder" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     nested:
