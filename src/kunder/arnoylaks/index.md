@@ -1,1 +1,4 @@
-# Arnøy laks
+---
+title: Arnøy laks
+---
+# Dette er en kunde
