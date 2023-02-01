@@ -28,9 +28,9 @@ module.exports = {
    */
   themeConfig: {
     logo: '/images/JM Hansen_Logo.png',
-    repo: '',
+    repo: 'olethomas93/vuepressCMS',
     editLinks: false,
-    docsDir: '',
+    docsDir: 'src',
     editLinkText: '',
     lastUpdated: false,
     nav: [
