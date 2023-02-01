@@ -52,11 +52,11 @@ module.exports = {
       link: '/admin/#/',
     },
       {
-        text: 'test',
-        link: '/test/',
+        text: 'Utstyr',
+        link: '/manual/',
         items:[
-          {text:"Montering SLS",link:'/test/montSLS' },
-          {text:"Miljøsensor",link:'/test/vedMiljoSen' }
+          {text:"Montering SLS",link:'/manual/montSLS' },
+          {text:"Miljøsensor",link:'/manual/vedMiljoSen' }
         ] 
       },
       {
