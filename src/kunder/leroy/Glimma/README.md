@@ -1,0 +1,1 @@
+# Lerøy aurora - Glimma

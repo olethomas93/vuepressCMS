@@ -1,0 +1,1 @@
+# Flakstadvåg laks
