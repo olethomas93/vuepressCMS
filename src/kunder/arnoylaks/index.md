@@ -1,8 +1,8 @@
 ---
 title: Arnøy laks
 ---
-
-
-![](src/.vuepress/dist/JM Hansen_Logo.png)
-
 # Dette er en kunde
+
+
+
+H﻿allo dette er en test
