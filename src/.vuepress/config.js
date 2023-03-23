@@ -43,16 +43,13 @@ module.exports = {
         children:[
           ["/", "Home"],
           "/docs/Atvise/",
-          "/docs/Frontend/",
-          "/docs/Howtos/"
-
         ]
       }
 
     ],
     nav:[
       {text:"Home",link:"/"},
-      {text:"Admin",link:"/docs/admin/#/"}
+      {text:"Admin",link:"/admin/#/"}
     ],
     displayAllHeaders: true
   },
