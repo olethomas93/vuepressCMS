@@ -36,10 +36,19 @@ module.exports = {
     editLinkText: "Editer",
     lastUpdated: false,
     sidebar:[
-      ["/", "Home"],
-      "/docs/atvise/",
-      "/docs/Frontend/",
-      "/docs/Howtos/"
+      '/',
+      {
+        title:'Docs',
+        collapsable:false,
+        children:[
+          ["/", "Home"],
+          "src/docs/Atvise/",
+          "src/docs/Frontend/",
+          "src/docs/Howtos/"
+
+        ]
+      }
+
     ],
     nav:[
       {text:"Home",link:"/"}
