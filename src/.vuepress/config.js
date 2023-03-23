@@ -1,5 +1,25 @@
 const { description } = require("../../package");
 
+const fs = require('fs');
+const path = require('path');
+
+var dirpath = "./src"
+
+// generate sidenav order by update time
+var sb = fs.readdirSync(dirpath).filter(f => {
+  console.log(f)
+    return f.match(/\.(md)$/i) && f !== 'README.md'
+}).map(f => {
+  return {
+    path:  '/' + f,
+    mtime: fs.statSync(dirpath +  '/' + f).mtime
+  }
+})
+.sort((a, b) => a.mtime - b.mtime)
+.map(f => f.path)
+
+console.log(sb)
+
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
@@ -34,19 +54,9 @@ module.exports = {
     repo: "olethomas93/vuepressCMS",
     editLinks: true,
     editLinkText: "Editer",
-    lastUpdated: false,
-    sidebar:[
-      '/',
-      {
-        title:'Docs',
-        collapsable:false,
-        children:[
-          ["/", "Home"],
-          "/docs/Atvise/",
-        ]
-      }
-
-    ],
+    lastUpdated: 'Last updated',
+    sidebar:sb,
+    docsDir:'src',
     nav:[
       {text:"Home",link:"/"},
       {text:"Admin",link:"/admin/#/"}
