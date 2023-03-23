@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: "Vuepress Docs Boilerplate",
+  title: "JM Docs",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -32,46 +32,19 @@ module.exports = {
   themeConfig: {
     logo: "/images/JM Hansen_Logo.png",
     repo: "olethomas93/vuepressCMS",
-    editLinks: false,
-    docsDir: "src",
-    editLinkText: "",
+    editLinks: true,
+    editLinkText: "Editer",
     lastUpdated: false,
-    nav: [
-      {
-        text: "kunder",
-        ariaLabel: "kunder",
-        link: "/docs/kunder/",
-        items: [
-          { text: "Arnøy laks", link: "/kunder/arnoylaks/" },
-          { text: "Flakstadvåg laks", link: "/kunder/flakstadvag/" },
-          { text: "Lerøy", link: "/kunder/leroy/" },
-          { text: "NRS", link: "/kunder/nrs/" },
-          { text: "Salaks", link: "/kunder/salaks/" },
-          { text: "Salmar", link: "/kunder/salmar/" },
-        ],
-      },
-      {
-        text: "Admin",
-        link: "/docs/admin/#/",
-      },
-      {
-        text: "Utstyr",
-        link: "/docs/manual/",
-        items: [
-          { text: "Montering SLS", link: "/manual/montSLS" },
-          { text: "Miljøsensor", link: "/manual/vedMiljoSen" },
-        ],
-      },
-      {
-        text: "Utstyr",
-        ariaLabel: "Hardware",
-        items: [
-          { text: "SLS", link: "/docs/utstyr/SLS/" },
-          { text: "Oksygen sensorer", link: "/utstyr/oksygensensorer/" },
-        ],
-      },
+    sidebar:[
+      ["/", "Home"],
+      "/docs/atvise/",
+      "/docs/Frontend/",
+      "/docs/Howtos/"
     ],
-    sidebar: "auto",
+    nav:[
+      {text:"Home",link:"/"}
+    ],
+    displayAllHeaders: true
   },
 
   /**
