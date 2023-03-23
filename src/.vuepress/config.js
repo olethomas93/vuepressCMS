@@ -51,7 +51,8 @@ module.exports = {
 
     ],
     nav:[
-      {text:"Home",link:"/"}
+      {text:"Home",link:"/"},
+      {text:"Admin",link:"/docs/admin/#/"}
     ],
     displayAllHeaders: true
   },
