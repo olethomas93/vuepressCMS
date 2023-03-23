@@ -42,9 +42,9 @@ module.exports = {
         collapsable:false,
         children:[
           ["/", "Home"],
-          "src/docs/Atvise/",
-          "src/docs/Frontend/",
-          "src/docs/Howtos/"
+          "/docs/Atvise/",
+          "/docs/Frontend/",
+          "/docs/Howtos/"
 
         ]
       }
